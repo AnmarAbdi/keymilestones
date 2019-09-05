@@ -1,0 +1,47 @@
+body {
+  font-family: 'Francois One', sans-serif;
+  background-image: linear-gradient(teal, lightblue);
+}
+
+.title {
+  text-align: center;
+  font-family: monospace;
+  font-size: 69px;
+}
+
+.intro {
+  text-align: center;
+}
+
+.main {
+  text-align: center;
+  font-size: 18px;
+  margin-right: 320px;
+  border: 30px;
+  border-right: 130px;
+}
+
+.row {
+  float: right;
+}
+
+.column1 {
+  float: bottom;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.column2 {
+  float: bottom;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+footer {
+  text-align: center;
+  font-family: serif;
+}
