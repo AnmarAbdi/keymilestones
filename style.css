@@ -1,15 +1,49 @@
+@keyframes bgcolor {
+    0% {
+        background-color: #05eaff
+    }
+
+    30% {
+        background-color: #00bbff
+    }
+
+    60% {
+        background-color: #0095ff
+    }
+
+    90% {
+        background-color: #4f4dff
+    }
+
+    100% {
+        background-color: #6a00ff
+    }
+}
+
+body {
+    -webkit-animation: bgcolor 20s infinite;
+    animation: bgcolor 10s infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+    font-family: 'Francois One', sans-serif;
+}
+
+iframe {
+  float: right;
+}
+/*
 body {
   font-family: 'Francois One', sans-serif;
   background-image: linear-gradient(teal, lightblue);
 }
-
+*/
 .title {
   text-align: center;
   font-family: monospace;
   font-size: 69px;
 }
 
-.intro {
+#intro {
   text-align: center;
 }
 
@@ -23,16 +57,29 @@ body {
 
 .row {
   float: right;
+  position: relative;
 }
 
 .column1 {
   float: bottom;
-  width: 33.33%;
-  padding: 5px;
+  border: 2px solid black;
 }
 
 .column2 {
   float: bottom;
+  border: 2px solid black;
+}
+
+.column3 {
+  border: 2px solid black;
+}
+
+.column4 {
+  border: 2px solid black;
+}
+
+.column5 {
+  border: 2px solid black;
 }
 
 .row::after {
